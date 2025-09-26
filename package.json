@@ -1,0 +1,67 @@
+{
+  "name": "@boolbyte/engine",
+  "version": "1.0.0",
+  "description": "A TypeScript client library for interacting with the ByteEngine API",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "commit": "cz",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major",
+    "changelog": "auto-changelog --template keepachangelog --unreleased --commit-limit false"
+  },
+  "keywords": [
+    "byteengine",
+    "api",
+    "client",
+    "typescript",
+    "ai",
+    "worker",
+    "storage"
+  ],
+  "author": "Boolbyte",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boolbyte-tech/byteengine-js-client.git"
+  },
+  "homepage": "https://byteengine.boolbyte.com",
+  "bugs": {
+    "url": "https://github.com/boolbyte-tech/byteengine-js-client/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "standard-version": "^9.5.0",
+    "auto-changelog": "^2.4.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

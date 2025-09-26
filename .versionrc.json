@@ -1,0 +1,55 @@
+{
+  "types": {
+    "feat": {
+      "section": "Features"
+    },
+    "fix": {
+      "section": "Bug Fixes"
+    },
+    "chore": {
+      "section": "Maintenance"
+    },
+    "docs": {
+      "section": "Documentation"
+    },
+    "style": {
+      "section": "Code Style"
+    },
+    "refactor": {
+      "section": "Code Refactoring"
+    },
+    "perf": {
+      "section": "Performance Improvements"
+    },
+    "test": {
+      "section": "Tests"
+    },
+    "build": {
+      "section": "Build System"
+    },
+    "ci": {
+      "section": "Continuous Integration"
+    }
+  },
+  "commitUrlFormat": "{{host}}/{{owner}}/{{repository}}/commit/{{hash}}",
+  "compareUrlFormat": "{{host}}/{{owner}}/{{repository}}/compare/{{previousTag}}...{{currentTag}}",
+  "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}",
+  "userUrlFormat": "{{host}}/{{user}}",
+  "releaseCommitMessageFormat": "chore(release): {{currentTag}}",
+  "bumpFiles": [
+    {
+      "filename": "package.json",
+      "type": "json"
+    },
+    {
+      "filename": "package-lock.json",
+      "type": "json"
+    }
+  ],
+  "packageFiles": [
+    {
+      "filename": "package.json",
+      "type": "json"
+    }
+  ]
+}
