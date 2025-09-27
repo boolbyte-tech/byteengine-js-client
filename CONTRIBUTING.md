@@ -16,7 +16,7 @@ Thank you for your interest in contributing to the ByteEngine JavaScript Client!
 
 ## Code of Conduct
 
-This project adheres to a code of conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to [conduct@boolbyte.com](mailto:conduct@boolbyte.com).
+This project adheres to a code of conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to [conduct@boolbyte.com](mailto:byteengine@boolbyte.com).
 
 ## Getting Started
 
@@ -315,7 +315,7 @@ We follow [Semantic Versioning](https://semver.org/):
 
 - **GitHub Issues**: For bug reports and feature requests
 - **Discord**: For community discussion
-- **Email**: [support@boolbyte.com](mailto:support@boolbyte.com) for direct support
+- **Email**: [support@boolbyte.com](mailto:byteengine@boolbyte.com) for direct support
 
 ## Recognition
 

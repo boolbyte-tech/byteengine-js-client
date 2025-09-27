@@ -437,10 +437,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- 📖 [Documentation](https://docs.byteengine.boolbyte.com)
+- 📖 [Documentation](https://byteengine.boolbyte.com)
 - 🐛 [Issue Tracker](https://github.com/boolbyte-tech/byteengine-js-client/issues)
-- 💬 [Discord Community](https://discord.gg/byteengine)
-- 📧 [Email Support](mailto:support@boolbyte.com)
+- 📧 [Email Support](mailto:byteengine@boolbyte.com)
 
 ## Changelog
 
