@@ -6,5 +6,6 @@ export { ByteEngineStorageClient } from './lib/clients/storage.client';
 export { ByteEngineModelClient } from './lib/clients/model.client';
 export { ByteEngineTaskClient } from './lib/clients/task.client';
 export { ByteEngineSessionClient } from './lib/clients/session.client';
-export { ByteEngineByteFhirClient } from './lib/clients/bytefhir.client';
+export { ByteEngineDataStoreClient } from './lib/clients/bytefhir.client';
+export { FhirClient } from './lib/clients/fhir.client';
 export * from './lib/types';

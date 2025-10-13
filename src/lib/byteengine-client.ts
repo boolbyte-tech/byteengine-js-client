@@ -5,7 +5,8 @@ import { ByteEngineStorageClient } from './clients/storage.client';
 import { ByteEngineModelClient } from './clients/model.client';
 import { ByteEngineTaskClient } from './clients/task.client';
 import { ByteEngineSessionClient } from './clients/session.client';
-import { ByteEngineByteFhirClient } from './clients/bytefhir.client';
+import { ByteEngineDataStoreClient } from './clients/bytefhir.client';
+
 
 export interface ByteEngineClientConfig {
   baseUrl: string;
@@ -24,7 +25,7 @@ export class ByteEngineClient {
   public readonly model: ByteEngineModelClient;
   public readonly task: ByteEngineTaskClient;
   public readonly session: ByteEngineSessionClient;
-  public readonly byteFhir: ByteEngineByteFhirClient;
+  public readonly store: ByteEngineDataStoreClient;
 
   constructor(config: ByteEngineClientConfig) {
     this.config = config;
@@ -37,6 +38,6 @@ export class ByteEngineClient {
     this.model = new ByteEngineModelClient(this.config);
     this.task = new ByteEngineTaskClient(this.config);
     this.session = new ByteEngineSessionClient(this.config);
-    this.byteFhir = new ByteEngineByteFhirClient(this.config);
+    this.store = new ByteEngineDataStoreClient(this.config);
   }
 }

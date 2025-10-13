@@ -94,7 +94,6 @@ export interface TaskApiDto {
   log?: string[];
   metadata?: Record<string, any>[];
   
-  // OpenAI-style Task fields
   startedAt?: Date;
   expiresAt?: Date;
   cancelledAt?: Date;

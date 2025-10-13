@@ -68,5 +68,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@types/fhir": "^0.0.41",
+    "fhir-kit-client": "^1.9.2"
   }
 }

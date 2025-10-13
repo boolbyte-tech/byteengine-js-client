@@ -1,4 +1,5 @@
 import { BaseClient } from '../base/base-client';
+import { CreateSessionAndTaskRequest, CreateSessionAndTaskResponseDto, TaskApiDto } from '../types';
 import { 
   CreateSessionApiDto, 
   GetSessionResponseDto, 
@@ -28,6 +29,13 @@ export class ByteEngineSessionClient extends BaseClient {
      */
     async createSession(data: CreateSessionApiDto): Promise<GetSessionResponseDto> {
         return this.post<SessionApiDto>('api/session/create', data);
+    }
+
+    /**
+     * Create a new session and task in one request
+     */
+    async createSessionAndTask(data: CreateSessionAndTaskRequest): Promise<CreateSessionAndTaskResponseDto> {
+        return this.post<TaskApiDto>('api/session/create-with-task', data);
     }
 
     /**

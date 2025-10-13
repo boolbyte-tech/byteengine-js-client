@@ -11,7 +11,7 @@ export interface FhirServerDto {
   region: ByteFhirRegion;
   fhirVersion: FhirVersion;
   status: ByteFhirStatus;
-  infrastructure: PlatformInfrastructure;
+  infrastructure: ByteFhirTypes;
   endpoint?: string;
   apiKey?: string;
 }
@@ -19,10 +19,9 @@ export interface FhirServerDto {
 // Request DTOs
 export interface CreateFhirDto {
   name: string;
-  description?: string;
   region: ByteFhirRegion;
   fhirVersion: FhirVersion;
-  testServer?: boolean;
+  type: ByteFhirTypes;
 }
 
 // Response DTOs
@@ -30,11 +29,9 @@ export interface CreateFhirResponseDto extends ApiResponse<FhirServerDto> {}
 
 export interface GetFhirResponseDto extends ApiResponse<FhirServerDto[]> {} 
 
-export enum PlatformInfrastructure {
-  TEST = 'test',
-  SHARED = 'shared',
+export enum ByteFhirTypes {
+  SERVERLESS = 'serverless',
   DEDICATED = 'dedicated',
-  ENTERPRISE = 'enterprise',
 }
 
 export enum ByteFhirStatus {
@@ -54,5 +51,13 @@ export enum ByteFhirRegion {
 }
 
 export enum FhirVersion {
-  R4 = 'R4',
+  R4 = 'R4'
+}
+
+// Re-export FHIR types from the official @types/fhir library
+export * from 'fhir/r4';
+
+// FHIR Search Parameters
+export interface FhirSearchParams {
+  [key: string]: string | number | boolean | undefined;
 }

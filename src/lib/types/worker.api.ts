@@ -1,25 +1,3 @@
-// Model enums
-export enum Models {
-    LLAMA_3_70B = 'llama-3-70b',
-    GEMMA_3_12B = 'gemma-3-12b',
-    GEMMA_3_27B = 'gemma-3-27b',
-    // GEMINI_2_5_PRO = 'gemini-2-5-pro',
-    // GEMINI_2_5_FLASH = 'gemini-2-5-flash',
-    // GEMINI_2_5_FLASH_LITE = 'gemini-2-5-flash-lite',
-    DEEPSEEK_R1 = 'deepseek-r1',
-    DEEPSEEK_V3_1 = 'deepseek-v3.1',
-    KIMI_K2 = 'kimi-k2',
-    // GPT_5 = 'gpt-5',
-    // GPT_5_MINI = 'gpt-5-mini',
-    // GPT_5_NANO = 'gpt-5-nano',
-    GPT_OSS_20B = 'gpt-oss-20b',
-    GPT_OSS_120B = 'gpt-oss-120b',
-    // GROK_3 = 'grok-3',
-    // GROK_3_MINI = 'grok-3-mini',
-    // GROK_4 = 'grok-4',
-    // BYTEMEDICAL_4B = 'byte-medical-4b',
-    MEDGEMMA_4B_IT = 'medgemma-4b-it',
-}
 import { ApiResponse } from './api.interface'
 import { ToolConfigs } from './toolkit.api';
 
@@ -83,8 +61,8 @@ export interface CreateWorkerApiDto {
   name: string;
   description?: string;
   instructions?: string;
-  defaultModelName: Models;
-  modelNames?: Models[];
+  defaultModelName: string;
+  modelNames?: string[];
   model?: string;
   toolConfigs?: ToolConfigs;
 }
@@ -93,8 +71,8 @@ export interface UpdateWorkerApiDto {
   name?: string;
   description?: string;
   instructions?: string;
-  defaultModelName: Models;
-  modelNames?: Models[];
+  defaultModelName: string;
+  modelNames?: string[];
   model?: string;
   toolConfigs?: ToolConfigs;
 }
