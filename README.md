@@ -55,24 +55,6 @@ interface ByteEngineClientConfig {
 }
 ```
 
-## Available Models
-
-The library supports various AI models through the `Models` enum:
-
-```typescript
-import { Models } from '@boolbyte/engine';
-
-// Available models
-Models.LLAMA_3_70B        // Llama 3 70B
-Models.GEMMA_3_12B        // Gemma 3 12B
-Models.GEMMA_3_27B        // Gemma 3 27B
-Models.DEEPSEEK_R1        // DeepSeek R1
-Models.DEEPSEEK_V3_1      // DeepSeek V3.1
-Models.KIMI_K2            // Kimi K2
-Models.GPT_OSS_20B        // GPT OSS 20B
-Models.GPT_OSS_120B       // GPT OSS 120B
-Models.MEDGEMMA_4B_IT     // MedGemma 4B IT
-```
 
 ## Client Modules
 
@@ -272,24 +254,49 @@ const models = await client.model.listModels();
 const model = await client.model.getModel('model-name');
 ```
 
-### ByteFhir Client
+### FHIR Store Client
 
-Healthcare-specific FHIR server management:
+Healthcare-specific FHIR store/server management:
 
 ```typescript
-// List all FHIR servers
-const fhirServers = await client.byteFhir.listFhirServers();
+// List all FHIR stores
+const fhirStores = await client.store.listFhirStores();
 
-// Get a specific FHIR server
-const server = await client.byteFhir.getFhirServer('server-id');
+// Get a specific FHIR store
+const store = await client.store.getFhirStore('store-id');
 
-// Create a new FHIR server
-const newServer = await client.byteFhir.createFhirServer({
-  name: 'My FHIR Server',
-  description: 'Healthcare data server',
+// Create a new FHIR store
+const newStore = await client.store.createFhirStore({
+  name: 'My FHIR Store',
+  description: 'Healthcare data store',
   region: 'global',
-  fhirVersion: 'R4',
-  testServer: false
+  fhirVersion: 'R4'
+});
+
+// Initialize an authenticated fhir-kit-client instance for a store
+await client.store.initializeFhirStoreClient('store-id');
+const fhirKit = client.store.getFhirStoreClient();
+
+// Use fhir-kit-client directly
+const patient = await fhirKit?.read({ resourceType: 'Patient', id: '123' });
+```
+
+### FHIR Client (direct re-export)
+
+If you prefer to use FHIR operations directly without the `ByteEngineClient`, you can import the `FhirClient` (a direct re-export of `fhir-kit-client`):
+
+```typescript
+import { FhirClient } from '@boolbyte/engine';
+
+const fhir = new FhirClient({ baseUrl: 'https://your-fhir-server' });
+
+// Read a Patient
+const patient = await fhir.read({ resourceType: 'Patient', id: '123' });
+
+// Search Patients
+const bundle = await fhir.search({
+  resourceType: 'Patient',
+  searchParams: { family: 'Smith' }
 });
 ```
 
