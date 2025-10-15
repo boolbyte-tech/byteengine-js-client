@@ -9,3 +9,4 @@ export { ByteEngineSessionClient } from './lib/clients/session.client';
 export { ByteEngineDataStoreClient } from './lib/clients/bytefhir.client';
 export { FhirClient } from './lib/clients/fhir.client';
 export * from './lib/types';
+export * from './lib/fhir';

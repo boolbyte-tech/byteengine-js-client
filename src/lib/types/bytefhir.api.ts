@@ -53,11 +53,3 @@ export enum ByteFhirRegion {
 export enum FhirVersion {
   R4 = 'R4'
 }
-
-// Re-export FHIR types from the official @types/fhir library
-export * from 'fhir/r4';
-
-// FHIR Search Parameters
-export interface FhirSearchParams {
-  [key: string]: string | number | boolean | undefined;
-}
