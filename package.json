@@ -1,6 +1,6 @@
 {
   "name": "@boolbyte/engine",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A TypeScript client library for interacting with the ByteEngine API",
   "type": "module",
   "main": "./dist/index.js",
