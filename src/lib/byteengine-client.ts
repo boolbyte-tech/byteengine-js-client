@@ -1,11 +1,11 @@
-import { ByteEngineWorkerClient } from './clients/worker.client';
-import { ByteEngineToolkitClient } from './clients/toolkit.client';
-import { ByteEngineKnowledgeBaseClient } from './clients/knowledgebase.client';
-import { ByteEngineStorageClient } from './clients/storage.client';
-import { ByteEngineModelClient } from './clients/model.client';
-import { ByteEngineTaskClient } from './clients/task.client';
-import { ByteEngineSessionClient } from './clients/session.client';
-import { ByteEngineDataStoreClient } from './clients/bytefhir.client';
+import { ByteEngineWorkerClient } from './clients/worker.client.js';
+import { ByteEngineToolkitClient } from './clients/toolkit.client.js';
+import { ByteEngineKnowledgeBaseClient } from './clients/knowledgebase.client.js';
+import { ByteEngineStorageClient } from './clients/storage.client.js';
+import { ByteEngineModelClient } from './clients/model.client.js';
+import { ByteEngineTaskClient } from './clients/task.client.js';
+import { ByteEngineSessionClient } from './clients/session.client.js';
+import { ByteEngineDataStoreClient } from './clients/bytefhir.client.js';
 
 
 export interface ByteEngineClientConfig {

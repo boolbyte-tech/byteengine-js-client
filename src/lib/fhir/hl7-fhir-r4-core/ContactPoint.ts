@@ -2,8 +2,8 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Element } from './Element';
-import { Period } from './Period';
+import { Element } from './Element.js';
+import { Period } from './Period.js';
 
 export interface ContactPoint extends Element {
     period?: Period;

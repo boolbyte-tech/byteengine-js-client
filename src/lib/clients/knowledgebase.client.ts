@@ -1,11 +1,11 @@
-import { BaseClient } from '../base/base-client';
+import { BaseClient } from '../base/base-client.js';
 import { 
   GetKnowledgeBasesResponseDto, 
   GetKnowledgeBaseResponseDto, 
   CreateKnowledgeBaseApiDto, 
   CreateKnowledgeBaseResponseDto, 
   KnowledgeBaseApiDto 
-} from '../types/knowledgebase.api';
+} from '../types/knowledgebase.api.js';
 
 export class ByteEngineKnowledgeBaseClient extends BaseClient {
   /** 

@@ -2,16 +2,16 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { CodeableConcept } from './CodeableConcept';
-import { ContactDetail } from './ContactDetail';
-import { DomainResource } from './DomainResource';
-import { Identifier } from './Identifier';
-import { Period } from './Period';
-import { Reference } from './Reference';
-import { RelatedArtifact } from './RelatedArtifact';
-import { TriggerDefinition } from './TriggerDefinition';
-import { UsageContext } from './UsageContext';
-import { Element } from './Element';
+import { CodeableConcept } from './CodeableConcept.js';
+import { ContactDetail } from './ContactDetail.js';
+import { DomainResource } from './DomainResource.js';
+import { Identifier } from './Identifier.js';
+import { Period } from './Period.js';
+import { Reference } from './Reference.js';
+import { RelatedArtifact } from './RelatedArtifact.js';
+import { TriggerDefinition } from './TriggerDefinition.js';
+import { UsageContext } from './UsageContext.js';
+import { Element } from './Element.js';
 
 export interface EventDefinition extends DomainResource {
     approvalDate?: string;

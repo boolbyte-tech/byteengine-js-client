@@ -1,4 +1,4 @@
-import { BaseClient } from '../base/base-client';
+import { BaseClient } from '../base/base-client.js';
 import { 
   CreateTaskRequest, 
   CreateTaskResponseDto, 
@@ -10,7 +10,7 @@ import {
   CancelTaskResponseDto, 
   ResumeTaskResponseDto, 
   TaskApiDto 
-} from '../types/task.api';
+} from '../types/task.api.js';
 
 export class ByteEngineTaskClient extends BaseClient {
   /**

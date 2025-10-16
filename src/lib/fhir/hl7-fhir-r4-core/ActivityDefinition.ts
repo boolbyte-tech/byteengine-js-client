@@ -2,23 +2,23 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Age } from './Age';
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { ContactDetail } from './ContactDetail';
-import { DomainResource } from './DomainResource';
-import { Dosage } from './Dosage';
-import { Duration } from './Duration';
-import { Element } from './Element';
-import { Expression } from './Expression';
-import { Identifier } from './Identifier';
-import { Period } from './Period';
-import { Quantity } from './Quantity';
-import { Range } from './Range';
-import { Reference } from './Reference';
-import { RelatedArtifact } from './RelatedArtifact';
-import { Timing } from './Timing';
-import { UsageContext } from './UsageContext';
+import { Age } from './Age.js';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { ContactDetail } from './ContactDetail.js';
+import { DomainResource } from './DomainResource.js';
+import { Dosage } from './Dosage.js';
+import { Duration } from './Duration.js';
+import { Element } from './Element.js';
+import { Expression } from './Expression.js';
+import { Identifier } from './Identifier.js';
+import { Period } from './Period.js';
+import { Quantity } from './Quantity.js';
+import { Range } from './Range.js';
+import { Reference } from './Reference.js';
+import { RelatedArtifact } from './RelatedArtifact.js';
+import { Timing } from './Timing.js';
+import { UsageContext } from './UsageContext.js';
 
 
 export interface ActivityDefinitionParticipant extends BackboneElement {

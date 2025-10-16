@@ -2,7 +2,7 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Quantity } from './Quantity';
+import { Quantity } from './Quantity.js';
 
 export interface Distance extends Quantity {
 }

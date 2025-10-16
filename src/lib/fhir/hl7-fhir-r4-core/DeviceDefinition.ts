@@ -2,17 +2,17 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Annotation } from './Annotation';
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { ContactPoint } from './ContactPoint';
-import { DomainResource } from './DomainResource';
-import { Identifier } from './Identifier';
-import { ProdCharacteristic } from './ProdCharacteristic';
-import { ProductShelfLife } from './ProductShelfLife';
-import { Quantity } from './Quantity';
-import { Reference } from './Reference';
-import { Element } from './Element';
+import { Annotation } from './Annotation.js';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { ContactPoint } from './ContactPoint.js';
+import { DomainResource } from './DomainResource.js';
+import { Identifier } from './Identifier.js';
+import { ProdCharacteristic } from './ProdCharacteristic.js';
+import { ProductShelfLife } from './ProductShelfLife.js';
+import { Quantity } from './Quantity.js';
+import { Reference } from './Reference.js';
+import { Element } from './Element.js';
 
 
 export interface DeviceDefinitionDeviceName extends BackboneElement {

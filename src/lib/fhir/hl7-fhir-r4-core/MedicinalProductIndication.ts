@@ -2,12 +2,12 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { DomainResource } from './DomainResource';
-import { Population } from './Population';
-import { Quantity } from './Quantity';
-import { Reference } from './Reference';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { DomainResource } from './DomainResource.js';
+import { Population } from './Population.js';
+import { Quantity } from './Quantity.js';
+import { Reference } from './Reference.js';
 
 
 export interface MedicinalProductIndicationOtherTherapy extends BackboneElement {

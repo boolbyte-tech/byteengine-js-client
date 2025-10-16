@@ -1,4 +1,4 @@
-import { ApiResponse } from './api.interface';
+import { ApiResponse } from './api.interface.js';
 
 // ByteFhir DTOs
 export interface FhirServerDto {

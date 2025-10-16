@@ -1,4 +1,4 @@
-import { ApiResponse } from './api.interface';
+import { ApiResponse } from './api.interface.js';
 
 // Storage-related enums for better type safety and consistency
 export enum StorageObjectType {

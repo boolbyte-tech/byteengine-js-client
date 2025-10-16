@@ -1,4 +1,4 @@
-import { BaseClient } from '../base/base-client';
+import { BaseClient } from '../base/base-client.js';
 import { 
   GetWorkersResponseDto, 
   GetWorkerResponseDto, 
@@ -8,7 +8,7 @@ import {
   UpdateWorkerResponseDto, 
   DeleteWorkerResponseDto, 
   WorkerApiDto 
-} from '../types/worker.api';
+} from '../types/worker.api.js';
 
 export class ByteEngineWorkerClient extends BaseClient {
   /**

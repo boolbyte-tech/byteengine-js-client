@@ -2,16 +2,16 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Annotation } from './Annotation';
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { ContactDetail } from './ContactDetail';
-import { DomainResource } from './DomainResource';
-import { Identifier } from './Identifier';
-import { Period } from './Period';
-import { Reference } from './Reference';
-import { RelatedArtifact } from './RelatedArtifact';
-import { Element } from './Element';
+import { Annotation } from './Annotation.js';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { ContactDetail } from './ContactDetail.js';
+import { DomainResource } from './DomainResource.js';
+import { Identifier } from './Identifier.js';
+import { Period } from './Period.js';
+import { Reference } from './Reference.js';
+import { RelatedArtifact } from './RelatedArtifact.js';
+import { Element } from './Element.js';
 
 
 export interface ResearchStudyArm extends BackboneElement {

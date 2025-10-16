@@ -2,10 +2,10 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { CodeableConcept } from './CodeableConcept';
-import { Element } from './Element';
-import { Period } from './Period';
-import { Reference } from './Reference';
+import { CodeableConcept } from './CodeableConcept.js';
+import { Element } from './Element.js';
+import { Period } from './Period.js';
+import { Reference } from './Reference.js';
 
 export interface Identifier extends Element {
     assigner?: Reference<'Organization'>;

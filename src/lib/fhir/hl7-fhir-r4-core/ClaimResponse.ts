@@ -2,17 +2,17 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Address } from './Address';
-import { Attachment } from './Attachment';
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { DomainResource } from './DomainResource';
-import { Identifier } from './Identifier';
-import { Money } from './Money';
-import { Period } from './Period';
-import { Quantity } from './Quantity';
-import { Reference } from './Reference';
-import { Element } from './Element';
+import { Address } from './Address.js';
+import { Attachment } from './Attachment.js';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { DomainResource } from './DomainResource.js';
+import { Identifier } from './Identifier.js';
+import { Money } from './Money.js';
+import { Period } from './Period.js';
+import { Quantity } from './Quantity.js';
+import { Reference } from './Reference.js';
+import { Element } from './Element.js';
 
 
 export interface ClaimResponseInsurance extends BackboneElement {

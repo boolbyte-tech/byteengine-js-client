@@ -2,16 +2,16 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { DomainResource } from './DomainResource';
-import { Dosage } from './Dosage';
-import { Duration } from './Duration';
-import { Money } from './Money';
-import { Quantity } from './Quantity';
-import { Ratio } from './Ratio';
-import { Reference } from './Reference';
-import { Element } from './Element';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { DomainResource } from './DomainResource.js';
+import { Dosage } from './Dosage.js';
+import { Duration } from './Duration.js';
+import { Money } from './Money.js';
+import { Quantity } from './Quantity.js';
+import { Ratio } from './Ratio.js';
+import { Reference } from './Reference.js';
+import { Element } from './Element.js';
 
 
 export interface MedicationKnowledgeMonograph extends BackboneElement {

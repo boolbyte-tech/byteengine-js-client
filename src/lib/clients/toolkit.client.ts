@@ -1,10 +1,10 @@
-import { BaseClient } from '../base/base-client';
+import { BaseClient } from '../base/base-client.js';
 import { 
   GetToolkitsWithToolsResponseDto, 
   GetToolsResponseDto, 
   ToolkitApiDto, 
   ToolApiDto 
-} from '../types/toolkit.api';
+} from '../types/toolkit.api.js';
 
 export class ByteEngineToolkitClient extends BaseClient {
   /**

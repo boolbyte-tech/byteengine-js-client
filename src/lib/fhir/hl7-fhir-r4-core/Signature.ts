@@ -2,9 +2,9 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Coding } from './Coding';
-import { Element } from './Element';
-import { Reference } from './Reference';
+import { Coding } from './Coding.js';
+import { Element } from './Element.js';
+import { Reference } from './Reference.js';
 
 export interface Signature extends Element {
     data?: string;

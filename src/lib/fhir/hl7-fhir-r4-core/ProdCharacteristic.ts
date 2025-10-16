@@ -2,11 +2,11 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Attachment } from './Attachment';
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { Quantity } from './Quantity';
-import { Element } from './Element';
+import { Attachment } from './Attachment.js';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { Quantity } from './Quantity.js';
+import { Element } from './Element.js';
 
 export interface ProdCharacteristic extends BackboneElement {
     color?: string[];

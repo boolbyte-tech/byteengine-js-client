@@ -2,16 +2,16 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { ContactDetail } from './ContactDetail';
-import { DomainResource } from './DomainResource';
-import { Element } from './Element';
-import { Identifier } from './Identifier';
-import { Money } from './Money';
-import { Period } from './Period';
-import { Reference } from './Reference';
-import { UsageContext } from './UsageContext';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { ContactDetail } from './ContactDetail.js';
+import { DomainResource } from './DomainResource.js';
+import { Element } from './Element.js';
+import { Identifier } from './Identifier.js';
+import { Money } from './Money.js';
+import { Period } from './Period.js';
+import { Reference } from './Reference.js';
+import { UsageContext } from './UsageContext.js';
 
 
 export interface ChargeItemDefinitionPropertyGroupPriceComponent extends BackboneElement {

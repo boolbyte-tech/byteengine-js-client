@@ -2,14 +2,14 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { ContactPoint } from './ContactPoint';
-import { DomainResource } from './DomainResource';
-import { Identifier } from './Identifier';
-import { Period } from './Period';
-import { Reference } from './Reference';
-import { Element } from './Element';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { ContactPoint } from './ContactPoint.js';
+import { DomainResource } from './DomainResource.js';
+import { Identifier } from './Identifier.js';
+import { Period } from './Period.js';
+import { Reference } from './Reference.js';
+import { Element } from './Element.js';
 
 
 export interface PractitionerRoleAvailableTime extends BackboneElement {

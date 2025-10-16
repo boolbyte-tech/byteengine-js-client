@@ -2,10 +2,10 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { DomainResource } from './DomainResource';
-import { Identifier } from './Identifier';
-import { Reference } from './Reference';
-import { Element } from './Element';
+import { DomainResource } from './DomainResource.js';
+import { Identifier } from './Identifier.js';
+import { Reference } from './Reference.js';
+import { Element } from './Element.js';
 
 export interface EnrollmentRequest extends DomainResource {
     candidate?: Reference<'Patient'>;

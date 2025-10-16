@@ -1,5 +1,5 @@
-import { ApiResponse } from './api.interface';
-import { ToolConfigs } from './toolkit.api';
+import { ApiResponse } from './api.interface.js';
+import { ToolConfigs } from './toolkit.api.js';
 
 // Session DTOs
 export interface SessionApiDto {

@@ -2,22 +2,22 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Annotation } from './Annotation';
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { ContactDetail } from './ContactDetail';
-import { DataRequirement } from './DataRequirement';
-import { DomainResource } from './DomainResource';
-import { Duration } from './Duration';
-import { Element } from './Element';
-import { Expression } from './Expression';
-import { Identifier } from './Identifier';
-import { Period } from './Period';
-import { Reference } from './Reference';
-import { RelatedArtifact } from './RelatedArtifact';
-import { Timing } from './Timing';
-import { TriggerDefinition } from './TriggerDefinition';
-import { UsageContext } from './UsageContext';
+import { Annotation } from './Annotation.js';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { ContactDetail } from './ContactDetail.js';
+import { DataRequirement } from './DataRequirement.js';
+import { DomainResource } from './DomainResource.js';
+import { Duration } from './Duration.js';
+import { Element } from './Element.js';
+import { Expression } from './Expression.js';
+import { Identifier } from './Identifier.js';
+import { Period } from './Period.js';
+import { Reference } from './Reference.js';
+import { RelatedArtifact } from './RelatedArtifact.js';
+import { Timing } from './Timing.js';
+import { TriggerDefinition } from './TriggerDefinition.js';
+import { UsageContext } from './UsageContext.js';
 
 
 export interface EvidenceVariableCharacteristic extends BackboneElement {

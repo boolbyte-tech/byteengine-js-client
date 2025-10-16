@@ -2,9 +2,9 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { Range } from './Range';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { Range } from './Range.js';
 
 export interface Population extends BackboneElement {
     ageCodeableConcept?: CodeableConcept;

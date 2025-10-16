@@ -2,18 +2,18 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Attachment } from './Attachment';
-import { CodeableConcept } from './CodeableConcept';
-import { ContactDetail } from './ContactDetail';
-import { DataRequirement } from './DataRequirement';
-import { DomainResource } from './DomainResource';
-import { Identifier } from './Identifier';
-import { ParameterDefinition } from './ParameterDefinition';
-import { Period } from './Period';
-import { Reference } from './Reference';
-import { RelatedArtifact } from './RelatedArtifact';
-import { UsageContext } from './UsageContext';
-import { Element } from './Element';
+import { Attachment } from './Attachment.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { ContactDetail } from './ContactDetail.js';
+import { DataRequirement } from './DataRequirement.js';
+import { DomainResource } from './DomainResource.js';
+import { Identifier } from './Identifier.js';
+import { ParameterDefinition } from './ParameterDefinition.js';
+import { Period } from './Period.js';
+import { Reference } from './Reference.js';
+import { RelatedArtifact } from './RelatedArtifact.js';
+import { UsageContext } from './UsageContext.js';
+import { Element } from './Element.js';
 
 export interface Library extends DomainResource {
     approvalDate?: string;

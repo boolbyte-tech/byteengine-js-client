@@ -2,10 +2,10 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { DomainResource } from './DomainResource';
-import { Element } from './Element';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { DomainResource } from './DomainResource.js';
+import { Element } from './Element.js';
 
 
 export interface OperationOutcomeIssue extends BackboneElement {

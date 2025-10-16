@@ -2,8 +2,8 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Element } from './Element';
-import { Reference } from './Reference';
+import { Element } from './Element.js';
+import { Reference } from './Reference.js';
 
 export interface Annotation extends Element {
     authorReference?: Reference<'Organization' | 'Patient' | 'Practitioner' | 'RelatedPerson'>;

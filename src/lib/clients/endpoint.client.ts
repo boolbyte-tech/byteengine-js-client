@@ -1,5 +1,5 @@
-// import { BaseClient } from '../base/base-client';
-// import { ByteEngineTypes } from '../types';
+// import { BaseClient } from '../base/base-client.js';
+// import { ByteEngineTypes } from '../types/index.js';
 
 // export class ByteEngineEndpointClient extends BaseClient {
 //   /**

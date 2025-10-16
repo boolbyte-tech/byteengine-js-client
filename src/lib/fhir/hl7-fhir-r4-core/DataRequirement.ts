@@ -2,9 +2,9 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { CodeableConcept } from './CodeableConcept';
-import { Element } from './Element';
-import { Reference } from './Reference';
+import { CodeableConcept } from './CodeableConcept.js';
+import { Element } from './Element.js';
+import { Reference } from './Reference.js';
 
 export interface DataRequirement extends Element {
     codeFilter?: Element[];

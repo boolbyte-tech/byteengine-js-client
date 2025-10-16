@@ -2,13 +2,13 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { Coding } from './Coding';
-import { ContactPoint } from './ContactPoint';
-import { DomainResource } from './DomainResource';
-import { Element } from './Element';
-import { Reference } from './Reference';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { Coding } from './Coding.js';
+import { ContactPoint } from './ContactPoint.js';
+import { DomainResource } from './DomainResource.js';
+import { Element } from './Element.js';
+import { Reference } from './Reference.js';
 
 
 export interface MessageHeaderResponse extends BackboneElement {

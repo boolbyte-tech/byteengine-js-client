@@ -2,10 +2,10 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { Identifier } from './Identifier';
-import { Quantity } from './Quantity';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { Identifier } from './Identifier.js';
+import { Quantity } from './Quantity.js';
 
 export interface ProductShelfLife extends BackboneElement {
     identifier?: Identifier;

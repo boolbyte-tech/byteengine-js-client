@@ -2,10 +2,10 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Extension } from './Extension';
-import { Narrative } from './Narrative';
-import { Resource } from './Resource';
-import { Element } from './Element';
+import { Extension } from './Extension.js';
+import { Narrative } from './Narrative.js';
+import { Resource } from './Resource.js';
+import { Element } from './Element.js';
 
 export interface DomainResource extends Resource {
     contained?: Resource[];

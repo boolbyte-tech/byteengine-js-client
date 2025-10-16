@@ -1,4 +1,4 @@
-import { ApiResponse } from './api.interface';
+import { ApiResponse } from './api.interface.js';
 
 // Toolkit DTOs
 export interface ToolkitApiDto {

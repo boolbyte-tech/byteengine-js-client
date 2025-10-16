@@ -2,14 +2,14 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { DomainResource } from './DomainResource';
-import { Identifier } from './Identifier';
-import { Quantity } from './Quantity';
-import { Range } from './Range';
-import { Reference } from './Reference';
-import { Element } from './Element';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { DomainResource } from './DomainResource.js';
+import { Identifier } from './Identifier.js';
+import { Quantity } from './Quantity.js';
+import { Range } from './Range.js';
+import { Reference } from './Reference.js';
+import { Element } from './Element.js';
 
 
 export interface SubstanceReferenceInformationGene extends BackboneElement {

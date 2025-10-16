@@ -2,12 +2,12 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { CodeableConcept } from './CodeableConcept';
-import { Coding } from './Coding';
-import { Element } from './Element';
-import { Quantity } from './Quantity';
-import { Range } from './Range';
-import { Reference } from './Reference';
+import { CodeableConcept } from './CodeableConcept.js';
+import { Coding } from './Coding.js';
+import { Element } from './Element.js';
+import { Quantity } from './Quantity.js';
+import { Range } from './Range.js';
+import { Reference } from './Reference.js';
 
 export interface UsageContext extends Element {
     code?: Coding;

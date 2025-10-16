@@ -2,7 +2,7 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Element } from './Element';
+import { Element } from './Element.js';
 
 export interface Quantity extends Element {
     code?: string;

@@ -2,10 +2,10 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { Period } from './Period';
-import { Element } from './Element';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { Period } from './Period.js';
+import { Element } from './Element.js';
 
 export interface MarketingStatus extends BackboneElement {
     country?: CodeableConcept;

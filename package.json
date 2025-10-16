@@ -9,18 +9,21 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.js",
+      "require": "./dist-cjs/index.cjs",
       "types": "./dist/index.d.ts"
     }
   },
   "files": [
     "dist/**/*",
+    "dist-cjs/**/*",
     "README.md",
     "CHANGELOG.md",
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc && node ./scripts/fix-esm-extensions.mjs",
+    "build:cjs": "tsc -p tsconfig.cjs.json && node -e \"const fs=require('fs');if(fs.existsSync('dist-cjs/index.js'))fs.renameSync('dist-cjs/index.js','dist-cjs/index.cjs');fs.writeFileSync('dist-cjs/package.json', JSON.stringify({type:'commonjs'}, null, 2));\"",
     "dev": "tsc --watch",
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run clean && npm run build",

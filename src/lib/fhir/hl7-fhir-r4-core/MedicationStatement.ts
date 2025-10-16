@@ -2,14 +2,14 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Annotation } from './Annotation';
-import { CodeableConcept } from './CodeableConcept';
-import { DomainResource } from './DomainResource';
-import { Dosage } from './Dosage';
-import { Identifier } from './Identifier';
-import { Period } from './Period';
-import { Reference } from './Reference';
-import { Element } from './Element';
+import { Annotation } from './Annotation.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { DomainResource } from './DomainResource.js';
+import { Dosage } from './Dosage.js';
+import { Identifier } from './Identifier.js';
+import { Period } from './Period.js';
+import { Reference } from './Reference.js';
+import { Element } from './Element.js';
 
 export interface MedicationStatement extends DomainResource {
     basedOn?: Reference<'CarePlan' | 'MedicationRequest' | 'ServiceRequest'>[];

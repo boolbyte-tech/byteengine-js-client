@@ -2,11 +2,11 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { Element } from './Element';
-import { Quantity } from './Quantity';
-import { Range } from './Range';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { Element } from './Element.js';
+import { Quantity } from './Quantity.js';
+import { Range } from './Range.js';
 
 export interface SubstanceAmount extends BackboneElement {
     amountQuantity?: Quantity;

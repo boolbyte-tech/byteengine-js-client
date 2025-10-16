@@ -1,4 +1,4 @@
-import { BaseClient } from '../base/base-client';
+import { BaseClient } from '../base/base-client.js';
 import { 
   CreateStorageApiDto, 
   CreateStorageResponseDto, 
@@ -9,7 +9,7 @@ import {
   UploadFileResponseDto, 
   StorageDto, 
   StorageFileDto 
-} from '../types/storage.api';
+} from '../types/storage.api.js';
 
 export class ByteEngineStorageClient extends BaseClient {
   /**

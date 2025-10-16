@@ -2,11 +2,11 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { DataRequirement } from './DataRequirement';
-import { Element } from './Element';
-import { Expression } from './Expression';
-import { Reference } from './Reference';
-import { Timing } from './Timing';
+import { DataRequirement } from './DataRequirement.js';
+import { Element } from './Element.js';
+import { Expression } from './Expression.js';
+import { Reference } from './Reference.js';
+import { Timing } from './Timing.js';
 
 export interface TriggerDefinition extends Element {
     condition?: Expression;

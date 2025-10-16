@@ -1,4 +1,4 @@
-import { ApiResponse } from './api.interface';
+import { ApiResponse } from './api.interface.js';
 
 // Knowledge Base DTOs
 export interface KnowledgeBaseApiDto {

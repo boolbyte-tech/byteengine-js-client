@@ -2,12 +2,12 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Attachment } from './Attachment';
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { DomainResource } from './DomainResource';
-import { SubstanceAmount } from './SubstanceAmount';
-import { Element } from './Element';
+import { Attachment } from './Attachment.js';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { DomainResource } from './DomainResource.js';
+import { SubstanceAmount } from './SubstanceAmount.js';
+import { Element } from './Element.js';
 
 
 export interface SubstancePolymerMonomerSetStartingMaterial extends BackboneElement {

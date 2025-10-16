@@ -1,4 +1,4 @@
-import { ApiResponse } from './api.interface';
+import { ApiResponse } from './api.interface.js';
 
 // Model DTOs
 export interface ModelApiDto {

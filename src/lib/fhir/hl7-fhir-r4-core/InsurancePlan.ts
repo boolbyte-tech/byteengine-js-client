@@ -2,18 +2,18 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Address } from './Address';
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { ContactPoint } from './ContactPoint';
-import { DomainResource } from './DomainResource';
-import { HumanName } from './HumanName';
-import { Identifier } from './Identifier';
-import { Money } from './Money';
-import { Period } from './Period';
-import { Quantity } from './Quantity';
-import { Reference } from './Reference';
-import { Element } from './Element';
+import { Address } from './Address.js';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { ContactPoint } from './ContactPoint.js';
+import { DomainResource } from './DomainResource.js';
+import { HumanName } from './HumanName.js';
+import { Identifier } from './Identifier.js';
+import { Money } from './Money.js';
+import { Period } from './Period.js';
+import { Quantity } from './Quantity.js';
+import { Reference } from './Reference.js';
+import { Element } from './Element.js';
 
 
 export interface InsurancePlanCoverageBenefitLimit extends BackboneElement {

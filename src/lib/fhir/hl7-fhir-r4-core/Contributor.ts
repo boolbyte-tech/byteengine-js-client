@@ -2,8 +2,8 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { ContactDetail } from './ContactDetail';
-import { Element } from './Element';
+import { ContactDetail } from './ContactDetail.js';
+import { Element } from './Element.js';
 
 export interface Contributor extends Element {
     contact?: ContactDetail[];

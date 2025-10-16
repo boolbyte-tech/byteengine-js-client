@@ -2,14 +2,14 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { Annotation } from './Annotation';
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { DomainResource } from './DomainResource';
-import { Element } from './Element';
-import { Identifier } from './Identifier';
-import { Period } from './Period';
-import { Reference } from './Reference';
+import { Annotation } from './Annotation.js';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { DomainResource } from './DomainResource.js';
+import { Element } from './Element.js';
+import { Identifier } from './Identifier.js';
+import { Period } from './Period.js';
+import { Reference } from './Reference.js';
 
 
 export interface ClinicalImpressionInvestigation extends BackboneElement {

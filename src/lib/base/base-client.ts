@@ -1,4 +1,4 @@
-import { BaseClientConfig, RequestOptions, ApiResponse } from '../types';
+import { BaseClientConfig, RequestOptions, ApiResponse } from '../types/index.js';
 
 export abstract class BaseClient {
   protected config: BaseClientConfig;

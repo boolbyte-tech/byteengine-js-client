@@ -1,5 +1,5 @@
-import { BaseClient } from '../base/base-client';
-import { CreateSessionAndTaskRequest, CreateSessionAndTaskResponseDto, TaskApiDto } from '../types';
+import { BaseClient } from '../base/base-client.js';
+import { CreateSessionAndTaskRequest, CreateSessionAndTaskResponseDto, TaskApiDto } from '../types/index.js';
 import { 
   CreateSessionApiDto, 
   GetSessionResponseDto, 
@@ -17,7 +17,7 @@ import {
   DeleteMessageResponseDto,
   SessionApiDto, 
   MessageApiDto
-} from '../types/session.api';
+} from '../types/session.api.js';
 
 /**
  * ByteEngine Session Client

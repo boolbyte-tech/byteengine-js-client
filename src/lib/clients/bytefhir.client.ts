@@ -1,10 +1,10 @@
-import { BaseClient } from '../base/base-client';
+import { BaseClient } from '../base/base-client.js';
 import { 
   GetFhirResponseDto, 
   FhirServerDto, 
   CreateFhirResponseDto, 
   CreateFhirDto 
-} from '../types/bytefhir.api';
+} from '../types/bytefhir.api.js';
 import Client from 'fhir-kit-client';
 
 export class ByteEngineDataStoreClient extends BaseClient {

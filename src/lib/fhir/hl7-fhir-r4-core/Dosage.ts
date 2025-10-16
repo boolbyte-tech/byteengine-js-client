@@ -2,12 +2,12 @@
 // https://github.com/fhir-schema/fhir-schema-codegen
 // Any manual changes made to this file may be overwritten.
 
-import { BackboneElement } from './BackboneElement';
-import { CodeableConcept } from './CodeableConcept';
-import { Element } from './Element';
-import { Quantity } from './Quantity';
-import { Ratio } from './Ratio';
-import { Timing } from './Timing';
+import { BackboneElement } from './BackboneElement.js';
+import { CodeableConcept } from './CodeableConcept.js';
+import { Element } from './Element.js';
+import { Quantity } from './Quantity.js';
+import { Ratio } from './Ratio.js';
+import { Timing } from './Timing.js';
 
 export interface Dosage extends BackboneElement {
     additionalInstruction?: CodeableConcept[];
