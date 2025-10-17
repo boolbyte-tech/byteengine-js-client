@@ -7,7 +7,7 @@ import {
 } from '../types/bytefhir.api.js';
 import Client from 'fhir-kit-client';
 
-export class ByteEngineDataStoreClient extends BaseClient {
+export class DataStoreClient extends BaseClient {
   private fhirClient: Client | null = null;
 
   /**

@@ -7,7 +7,7 @@ import {
   KnowledgeBaseApiDto 
 } from '../types/knowledgebase.api.js';
 
-export class ByteEngineKnowledgeBaseClient extends BaseClient {
+export class KnowledgeBaseClient extends BaseClient {
   /** 
    * List all knowledge bases
    */

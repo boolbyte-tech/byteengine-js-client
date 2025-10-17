@@ -11,7 +11,7 @@ import {
   StorageFileDto 
 } from '../types/storage.api.js';
 
-export class ByteEngineStorageClient extends BaseClient {
+export class StorageClient extends BaseClient {
   /**
    * Create a new storage
    */

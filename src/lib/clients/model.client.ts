@@ -1,7 +1,7 @@
 import { BaseClient } from '../base/base-client.js';
 import { GetModelsResponseDto, ModelApiDto } from '../types/model.api.js';
 
-export class ByteEngineModelClient extends BaseClient {
+export class ModelClient extends BaseClient {
   /**
    * Get all models
    */

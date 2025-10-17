@@ -11,7 +11,7 @@ export interface ApiResponse<T = any> {
   
   // Base Client Configuration
   export interface BaseClientConfig {
-    baseUrl: string;
+    baseUrl?: string;
     apiKey: string;
     timeout?: number;
   }

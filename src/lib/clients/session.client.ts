@@ -23,7 +23,7 @@ import {
  * ByteEngine Session Client
  * Handles all session-related API operations
  */
-export class ByteEngineSessionClient extends BaseClient {
+export class SessionClient extends BaseClient {
     /**
      * Create a new session
      */

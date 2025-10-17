@@ -12,7 +12,7 @@ import {
   TaskApiDto 
 } from '../types/task.api.js';
 
-export class ByteEngineTaskClient extends BaseClient {
+export class TaskClient extends BaseClient {
   /**
    * Create a task
    */

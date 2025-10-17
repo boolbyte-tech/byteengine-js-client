@@ -1,43 +1,47 @@
-import { ByteEngineWorkerClient } from './clients/worker.client.js';
-import { ByteEngineToolkitClient } from './clients/toolkit.client.js';
-import { ByteEngineKnowledgeBaseClient } from './clients/knowledgebase.client.js';
-import { ByteEngineStorageClient } from './clients/storage.client.js';
-import { ByteEngineModelClient } from './clients/model.client.js';
-import { ByteEngineTaskClient } from './clients/task.client.js';
-import { ByteEngineSessionClient } from './clients/session.client.js';
-import { ByteEngineDataStoreClient } from './clients/bytefhir.client.js';
+import { WorkerClient } from './clients/worker.client.js';
+import { ToolkitClient } from './clients/toolkit.client.js';
+import { KnowledgeBaseClient } from './clients/knowledgebase.client.js';
+import { StorageClient } from './clients/storage.client.js';
+import { ModelClient } from './clients/model.client.js';
+import { TaskClient } from './clients/task.client.js';
+import { SessionClient } from './clients/session.client.js';
+import { DataStoreClient } from './clients/bytefhir.client.js';
 
 
-export interface ByteEngineClientConfig {
-  baseUrl: string;
+export interface EngineClientConfig {
+  baseUrl?: string;
   apiKey: string;
   timeout?: number;
 }
 
-export class ByteEngineClient {
-  private config: ByteEngineClientConfig;
+    export class EngineClient {
+  private config: EngineClientConfig;
 
   // Client instances
-  public readonly worker: ByteEngineWorkerClient;
-  public readonly toolkit: ByteEngineToolkitClient;
-  public readonly knowledgeBase: ByteEngineKnowledgeBaseClient;
-  public readonly storage: ByteEngineStorageClient;
-  public readonly model: ByteEngineModelClient;
-  public readonly task: ByteEngineTaskClient;
-  public readonly session: ByteEngineSessionClient;
-  public readonly store: ByteEngineDataStoreClient;
+  public readonly worker: WorkerClient;
+  public readonly toolkit: ToolkitClient;
+  public readonly knowledgeBase: KnowledgeBaseClient;
+  public readonly storage: StorageClient;
+  public readonly model: ModelClient;
+  public readonly task: TaskClient;
+  public readonly session: SessionClient;
+  public readonly dataStore: DataStoreClient;
 
-  constructor(config: ByteEngineClientConfig) {
-    this.config = config;
+  constructor(config: EngineClientConfig) {
+    this.config = {
+      baseUrl: config.baseUrl || 'https://api.engine.boolbyte.com',
+      apiKey: config.apiKey,
+      timeout: config.timeout || 30000
+    };
     
     // Initialize client instances
-    this.worker = new ByteEngineWorkerClient(this.config);
-    this.toolkit = new ByteEngineToolkitClient(this.config);
-    this.knowledgeBase = new ByteEngineKnowledgeBaseClient(this.config);
-    this.storage = new ByteEngineStorageClient(this.config);
-    this.model = new ByteEngineModelClient(this.config);
-    this.task = new ByteEngineTaskClient(this.config);
-    this.session = new ByteEngineSessionClient(this.config);
-    this.store = new ByteEngineDataStoreClient(this.config);
+    this.worker = new WorkerClient(this.config);
+    this.toolkit = new ToolkitClient(this.config);
+    this.knowledgeBase = new KnowledgeBaseClient(this.config);
+    this.storage = new StorageClient(this.config);
+    this.model = new ModelClient(this.config);
+    this.task = new TaskClient(this.config);
+    this.session = new SessionClient(this.config);
+    this.dataStore = new DataStoreClient(this.config);
   }
 }

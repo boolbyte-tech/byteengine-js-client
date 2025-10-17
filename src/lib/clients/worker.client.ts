@@ -10,7 +10,7 @@ import {
   WorkerApiDto 
 } from '../types/worker.api.js';
 
-export class ByteEngineWorkerClient extends BaseClient {
+export class WorkerClient extends BaseClient {
   /**
    * List all workers
    */

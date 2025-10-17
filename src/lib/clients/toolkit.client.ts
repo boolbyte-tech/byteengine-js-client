@@ -6,7 +6,7 @@ import {
   ToolApiDto 
 } from '../types/toolkit.api.js';
 
-export class ByteEngineToolkitClient extends BaseClient {
+export class ToolkitClient extends BaseClient {
   /**
    * Get all toolkits with their tools
    */
